@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>CALCULADORA DE SALÁRIO</h1>
+      <form action="">
+        
+        <div class="marginInput">
+        <label>Digite a quantidade de dias trabalhados: <span class="obrigatorio">*</span></label>
+        <input type="number" id="inputDias" class="estiloForm" placeholder="Ex: 15" />
+        <span id="erroDias" class="obrigatorio"></span>
+      </div>
+
+      <div class="marginInput">
+        <label>Quantas horas você trabalha por dia?: <span class="obrigatorio">*</span></label>
+        <input type="number" id="horasDia" class="estiloForm" placeholder="Ex: 8" />
+        <span id="erroHorasDia" class="obrigatorio"></span>
+      </div>
+
+      <div class="marginInput">
+        <label>Você faltou alguma hora no trabalho, se sim, quantas?:</label>
+        <input type="number" id="hNegativas" placeholder="Ex: 2" class="estiloForm"/>
+      </div>
+  
+      <div class="marginInput">
+        <label>Digite o seu salário: <span class="obrigatorio">*</span></label>
+        <input type="number" id="salario" placeholder="Ex: 1.500" class="estiloForm"/>
+        <span class="obrigatorio" id="erroSalario"></span>
+      </div>
+
+      <div class="btnFlex">
+        <input id="btn-calcular" type="button" class="btn" value="Calcular" onclick="calcSalario()"/>
+        <input id="btn-limpar" type="button" class="btn" onclick="limpar()" value=" Limpar ">
+      </div>
+      </form>
+
+      <span id="result"></span>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
